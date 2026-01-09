@@ -167,3 +167,8 @@ code {
   border-radius: 3px;
   margin-top: -1.5rem;
 }
+
+/* bug hunt
+* negative margins and padding?
+*from css validator ...Value Error : margin only 0 can be a unit. You must put a unit after your number : -1
+*/
