@@ -31,6 +31,18 @@ characters.forEach(printName);
 // Log each filtered character's name to the console. Then, dynamically create <li> elements for each filtered character 
 // and append them to the HTML unordered list element with the id "young-characters-list".
 
+
+function findYounglings(character){
+  if(character.age <40){
+    console.log(character.name);
+    const li = document.createElement("li");
+    li.textContent = character.name;
+    const injectContainer = document.getElementById("young-characters-list");
+    injectContainer.appendChild(li);
+  }
+}
+characters.forEach(findYounglings);
+
 // 3. Build a reusable function that accepts an array of character objects as a parameter. 
 // Inside the function, iterate through the array and extract each character's name property. 
 // Dynamically generate <li> elements for each name and append them to a target HTML list element. 
