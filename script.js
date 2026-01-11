@@ -18,7 +18,6 @@ const characters = [
 
 // 1. Iterate through the characters array and output each character's name to the console using console.log(). 
 // Then, dynamically create <li> elements for each character name and append them to the HTML unordered list element with the id "names-list".
-characters.forEach(printName);
 
 function printName(character){
   console.log(character.name);
@@ -27,7 +26,7 @@ function printName(character){
   const injectContainer = document.getElementById("names-list");
   injectContainer.appendChild(li);
 }
-
+characters.forEach(printName);
 // 2. Filter the characters array to find only those characters whose age property is less than 40. 
 // Log each filtered character's name to the console. Then, dynamically create <li> elements for each filtered character 
 // and append them to the HTML unordered list element with the id "young-characters-list".
