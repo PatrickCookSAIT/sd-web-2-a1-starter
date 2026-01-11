@@ -79,7 +79,26 @@ printArrayNamesForAge(characters,113);
 // Before accessing the name property of each character object, check whether the "name" property exists. 
 // If a character object is missing the name property, use console.error() to log a descriptive error message to the console, 
 // and dynamically create and display the error message in the HTML div element with id "error-messages".
-
+function printArrayNamesForAgeErrorHandling(charactersObject, setAge){
+  function printNameInArray(character){
+    if(character.name == null){
+      let errorMsg = "ID: " + character.id + " Error. Impossible, perhaps the archives are incomplete";
+      error.log(errorMsg)
+    }
+    else{
+      if(character.age < setAge){
+        console.log(character.name);
+        const li = document.createElement("li");
+        li.textContent = character.name;
+        const injectContainer = document.getElementById("age-filter-list");
+        injectContainer.appendChild(li);
+      } 
+    }
+    
+  }
+  charactersObject.forEach(printNameInArray);
+}
+printArrayNamesForAgeErrorHandling(characters,200);
 // 6. Create a second array called "brokenCharacters" that intentionally contains objects with missing name properties (e.g., objects with only id and age).
 //  Pass this broken array to your error-handling functions from exercise 5. Verify that your error handling correctly identifies 
 // the missing name properties, logs appropriate error messages to the console, 
