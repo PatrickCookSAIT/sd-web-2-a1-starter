@@ -2,7 +2,7 @@
 
 // sample data - expanded Star Wars characters with varied ages
 const characters = [
-  { id: 1, name: "Luke Skywalker", age: 23 }, // missing comma after "Luke Skywalker" and age
+  { id: 1, name: "Luke Skywalker", age: 23 }, 
   { id: 2, name: "Darth Vader", age: 45 },
   { id: 3, name: "Princess Leia", age: 23 },
   { id: 4, name: "Obi-Wan Kenobi", age: 57 },
@@ -84,3 +84,15 @@ printArrayNamesForAge(characters,113);
 //  Pass this broken array to your error-handling functions from exercise 5. Verify that your error handling correctly identifies 
 // the missing name properties, logs appropriate error messages to the console, 
 // and displays those error messages in the HTML div element with id "broken-array-errors".
+const brokenCharacters = [
+  { id: 1, age: 23 }, 
+  { id: 2, age: 45 },
+  { id: 3, age: 23 },
+  { id: 4, age: 57 },
+  { id: 5, age: 900 },
+  { id: 6, age: 32 },
+  { id: 7, age: 234 },
+  { id: 8, age: 33 },
+  { id: 9, age: 112 },
+  { id: 10, age: 27 },
+];
