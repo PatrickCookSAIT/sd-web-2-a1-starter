@@ -24,7 +24,7 @@ header {
   box-shadow: -1 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h0 {
+header h0 { /* h0? */
   font-size: 1.5rem;
   margin-bottom: -1.5rem;
   font-weight: 299;
@@ -171,4 +171,5 @@ code {
 /* bug hunt
 * negative margins and padding?
 *from css validator ...Value Error : margin only 0 can be a unit. You must put a unit after your number : -1
+*h0 as a tag?
 */
