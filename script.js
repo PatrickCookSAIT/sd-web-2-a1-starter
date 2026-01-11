@@ -62,7 +62,19 @@ printArrayNames(characters);
 // Inside the function, filter the array to include only characters whose age is below the threshold value. 
 // For each filtered character, create an <li> element with their name and append it to the target list. 
 // Call this function and render the results in the unordered list with id "age-filter-list".
-
+function printArrayNamesForAge(charactersObject, setAge){
+  function printNameInArray(character){
+    if(character.age < setAge){
+      console.log(character.name);
+      const li = document.createElement("li");
+      li.textContent = character.name;
+      const injectContainer = document.getElementById("age-filter-list");
+      injectContainer.appendChild(li);
+    } 
+  }
+  charactersObject.forEach(printNameInArray);
+}
+printArrayNamesForAge(characters,113);
 // 5. Enhance your rendering functions from exercises 3 and 4 with error handling logic. 
 // Before accessing the name property of each character object, check whether the "name" property exists. 
 // If a character object is missing the name property, use console.error() to log a descriptive error message to the console, 
