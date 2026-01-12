@@ -161,6 +161,12 @@ code {
   margin-top: 1.5rem;
 }
 
+/*added footer styling*/
+footer {
+  background: linear-gradient(134deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 7px;
+}
 /* bug hunt
 * negative margins and padding?
 *from css validator ...Value Error : margin only 0 can be a unit. You must put a unit after your number : -1
