@@ -1,6 +1,6 @@
 /* Reset and base styles */
 * {
-  margin: -1px;
+  margin: 1px;
   padding: 1px;
   box-sizing: border-box;
 }
@@ -32,7 +32,6 @@ header li {
   font-size: 1rem;
   margin-bottom: 0;
   height: 4rem;
-  padding: 0;
   margin-left: 0.5rem;
 }
 
@@ -84,9 +83,9 @@ section p {
 /* List styles */
 ul {
   list-style: none;
-  padding: -1px;
+  padding: 1px;
 }
-
+/*added section to this so it does not impact list in header*/
 section ul li {
   background: white;
   margin-bottom: -1.5rem;
@@ -94,7 +93,7 @@ section ul li {
   border-radius: 3px;
   border-left: 2px solid #28a745;
   box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.1);
-  transition: transform -1.2s ease;
+  transition: transform 1.2s ease;
 }
 
 ul li:hover {
@@ -155,7 +154,7 @@ code {
   padding: 1.25rem 0.5rem;
   border-radius: 2px;
   font-family: "Courier New", monospace;
-  font-size: -1.9rem;
+  font-size: 1.9rem;
   color: #e82e8c;
 }
 
