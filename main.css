@@ -84,8 +84,8 @@ ul {
 /*added section to this so it does not impact list in header*/
 section ul li {
   background: white;
-  margin-bottom: -1.5rem;
-  padding: 1.75rem;
+  margin-bottom: 0.1rem;
+  padding: 1rem;
   border-radius: 3px;
   border-left: 2px solid #28a745;
   box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.1);
