@@ -65,14 +65,14 @@ section p {
   background-color: #f7f9fa;
   border: 0px solid #e9ecef;
   border-radius: 5px;
-  padding: 0rem;
+  padding: 1rem;
   margin-top: 0rem;
 }
 
 .output h3 {
   color: #495056;
-  font-size: 0.1rem;
-  margin-bottom: -1.75rem;
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
   font-weight: 499;
 }
 
