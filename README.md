@@ -13,7 +13,7 @@ This is a summary of the main tasks you need to complete.
   - [X] Capture a screenshot of the `node` prompt with your name.
 - [ ] **Part 2: The Project**
   - [X] Download a zip folder of this repository (or fork) from github and initialize a new repo with it. When this is complete, you should be able to edit the code in your editor and then push it to github
-  - [ ] Create a `.gitignore` file.
+  - [X] Create a `.gitignore` file.
   - [X] Create a folder for static assets (e.g., `public/` or `assets/`)
   - [X] Add your Node.js screenshot to the asset folder.
   - [ ] Fix all bugs in the HTML, CSS, and JavaScript files.
