@@ -15,6 +15,18 @@ const characters = [
 ];
 
 // broken test data for exercise 6
+const brokenCharacters = [
+  { id: 1, age: 23 }, 
+  { id: 2, age: 45 },
+  { id: 3, age: 23 },
+  { id: 4, age: 57 },
+  { id: 5, age: 900 },
+  { id: 6, age: 32 },
+  { id: 7, age: 234 },
+  { id: 8, age: 33 },
+  { id: 9, age: 112 },
+  { id: 10, age: 27 },
+];
 
 // 1. Iterate through the characters array and output each character's name to the console using console.log(). 
 // Then, dynamically create <li> elements for each character name and append them to the HTML unordered list element with the id "names-list".
@@ -103,15 +115,3 @@ printArrayNamesForAgeErrorHandling(characters,200);
 //  Pass this broken array to your error-handling functions from exercise 5. Verify that your error handling correctly identifies 
 // the missing name properties, logs appropriate error messages to the console, 
 // and displays those error messages in the HTML div element with id "broken-array-errors".
-const brokenCharacters = [
-  { id: 1, age: 23 }, 
-  { id: 2, age: 45 },
-  { id: 3, age: 23 },
-  { id: 4, age: 57 },
-  { id: 5, age: 900 },
-  { id: 6, age: 32 },
-  { id: 7, age: 234 },
-  { id: 8, age: 33 },
-  { id: 9, age: 112 },
-  { id: 10, age: 27 },
-];
